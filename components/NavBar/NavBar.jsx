@@ -1,7 +1,7 @@
 import Link from "next/link";
 function NavBar() {
   return (
-    <nav className="bg-white px-2 py-3 sm:px-4 shadow-md rounded w-full">
+    <nav className=" px-2 py-7 sm:px-4  rounded w-full">
       <div className="container flex justify-between items-center ">
         <div>Logo</div>
         <button

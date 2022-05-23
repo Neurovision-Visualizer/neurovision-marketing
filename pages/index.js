@@ -18,34 +18,36 @@ export default function Home() {
       </Head>
 
       <main>
-        <NavBar></NavBar>
-        <section
-          id="banner"
-          className="px-8 py-10 grid grid-cols-2 justify-items-center"
-        >
-          <article>
-            {" "}
-            <h1 className="text-4xl w-3/4 font-medium ">
+        <div className=" banner_bg text-white h-screen ">
+          <NavBar></NavBar>
+          <section
+            id="banner"
+            className="px-10 py-10 pb-20 grid grid-cols-2 justify-content-center my-20"
+          >
+            <article className="">
               {" "}
-              Neural Network Learning{" "}
-              <span className="font-semibold"> Enhanced </span>
-            </h1>
-            <p className="w-4/5 my-4 font-light">
-              Learning Neural networks doesn{"'"}t have to be hard!
-              <br />
-              Neurovision provides a streamlined learning path that allows you
-              to grasp the key concepts for neural networks in a fun and
-              interactive way!
-            </p>
-            <CallToAction variantType={"primary"}></CallToAction>
-          </article>
-          <article></article>
-        </section>
+              <h1 className="text-5xl font-medium">
+                {" "}
+                Neural Network Learning{" "}
+                <span className="font-semibold"> Enhanced </span>
+              </h1>
+              <p className=" my-7 text-lg font-light">
+                Learning Neural networks doesn{"'"}t have to be hard!
+                <br />
+                Neurovision provides a streamlined learning path that allows you
+                to grasp the key concepts for neural networks in a fun and
+                interactive way!
+              </p>
+              <CallToAction variantType={"primary"}></CallToAction>
+            </article>
+            <article></article>
+          </section>
+        </div>
         <section
           id="about"
-          className="px-8 py-10 grid grid-cols-2 justify-items-center"
+          className="px-10 py-10 grid grid-cols-2 justify-items-center h-screen"
         >
-          <article>
+          <article className="my-auto">
             {" "}
             <h4 className="text-primary font-semibold uppercase">
               ABOuT NEUROVISION{" "}
@@ -64,15 +66,15 @@ export default function Home() {
             </p>
             <CallToAction variantType={"primary"}></CallToAction>
           </article>
-          <article className="rounded-md shadow-md">
+          <article className="rounded-md shadow-md my-auto">
             <Image alt="about" src={AboutImg} width="650px" height="400px" />
           </article>
         </section>
         <section
           id="process"
-          className="mt-10 px-8 py-20 grid grid-cols-2 justify-items-center gap-20 process_bg"
+          className="mt-10 px-10 py-20 grid grid-cols-2 justify-items-center gap-20 process_bg h-screen"
         >
-          <article className="shadow-md rounded-md">
+          <article className="shadow-md rounded-md my-auto">
             <Image
               className="rounded-md shadow-md"
               src={DesignNetwork}
@@ -81,7 +83,7 @@ export default function Home() {
               alt="design network"
             />
           </article>
-          <article>
+          <article className="my-auto">
             {" "}
             <h4 className="text-white font-semibold uppercase my-3">
               HOW IT WORKS{" "}
@@ -98,7 +100,7 @@ export default function Home() {
             <CallToAction variantType={"light"}></CallToAction>
           </article>
         </section>
-        <section id="features" className="px-8 grid grid-cols-2 ">
+        <section id="features" className="px-10 grid grid-cols-2 ">
           <article className="my-auto">
             {" "}
             <h4 className="text-primary font-semibold uppercase">
