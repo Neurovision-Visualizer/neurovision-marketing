@@ -3,11 +3,7 @@ function NavBar() {
   return (
     <nav className="bg-white px-2 py-3 sm:px-4 shadow-md rounded w-full">
       <div className="container flex justify-between items-center ">
-        <div>
-          <Link href="/" className="no-underline  my-auto">
-            Logo
-          </Link>
-        </div>
+        <div>Logo</div>
         <button
           data-collapse-toggle="mobile-menu"
           type="button"
@@ -49,35 +45,25 @@ function NavBar() {
                 href="/"
                 className="hover:text-primary transition-colors duration-300 "
               >
-                {" "}
-                Home{" "}
+                Home
               </Link>
             </li>
             <li>
               {" "}
               <Link
-                href="#features"
+                href="/"
                 className="hover:text-primary transition-colors duration-300 "
               >
-                Features
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#how-it-works"
-                className="hover:text-primary transition-colors duration-300 "
-              >
-                {" "}
-                How it Works
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#visualizer"
-                className="hover:text-primary transition-colors duration-300 "
-              >
-                {" "}
                 Visualizer
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link
+                href="/"
+                className="hover:text-primary transition-colors duration-300 "
+              >
+                Our Process
               </Link>
             </li>
           </ul>
