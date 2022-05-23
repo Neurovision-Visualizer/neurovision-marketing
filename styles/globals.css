@@ -30,7 +30,7 @@ a {
 }
 
 .banner_bg{
-  background-image: url('../assets/landing_banner.jpg') ;
+  background-image: url('/landing_banner_updated.jpg') ;
   background-size: cover;
   background-position: center;
 }
