@@ -14,7 +14,7 @@ function CallToAction({ variantType, hoverStyle }) {
 
   return (
     <button
-      class={`rounded-full text-sm px-7 py-3 hover:${hoverStyle} ${styles[variantType].bg}  ${styles[variantType].text}`}
+      className={`rounded-full text-sm px-7 py-3 hover:${hoverStyle} ${styles[variantType].bg}  ${styles[variantType].text}`}
     >
       {" "}
       Get Started{" "}

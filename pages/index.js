@@ -31,7 +31,7 @@ export default function Home() {
               <span className="font-semibold"> Enhanced </span>
             </h1>
             <p className="w-4/5 my-4 font-light">
-              Learning Neural networks doesn't have to be hard!
+              Learning Neural networks doesn{"'"}t have to be hard!
               <br />
               Neurovision provides a streamlined learning path that allows you
               to grasp the key concepts for neural networks in a fun and
@@ -65,7 +65,7 @@ export default function Home() {
             <CallToAction variantType={"primary"}></CallToAction>
           </article>
           <article className="rounded-md shadow-md">
-            <Image src={AboutImg} width="650px" height="400px" />
+            <Image alt="about" src={AboutImg} width="650px" height="400px" />
           </article>
         </section>
         <section
@@ -78,6 +78,7 @@ export default function Home() {
               src={DesignNetwork}
               width="650px"
               height="400px"
+              alt="design network"
             />
           </article>
           <article>
@@ -98,7 +99,7 @@ export default function Home() {
           </article>
         </section>
         <section id="features" className="px-8 grid grid-cols-2 ">
-          <article class="my-auto">
+          <article className="my-auto">
             {" "}
             <h4 className="text-primary font-semibold uppercase">
               OUR PROCESS
@@ -114,7 +115,12 @@ export default function Home() {
             <CallToAction variantType={"primary"}></CallToAction>
           </article>
           <article className="">
-            <Image src={StructuredPath} height="600px" width="500px" />
+            <Image
+              alt="structured path"
+              src={StructuredPath}
+              height="600px"
+              width="500px"
+            />
           </article>
         </section>
         <section id="team"></section>
