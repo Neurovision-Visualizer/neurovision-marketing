@@ -7,10 +7,14 @@ import CallToAction from "../components/CallToAction/CallToAction";
 import AboutImg from "../assets/about-neurovision.jpg";
 import DesignNetwork from "../assets/design-network.jpg";
 import StructuredPath from "../assets/structured-path.jpg";
+import Matthew from "../assets/matthew.jpg";
+import Ashley from "../assets/ashley.jpg";
+import Jantae from "../assets/jantae.jpg";
+import Jason from "../assets/jason.jpg";
 
 export default function Home() {
   return (
-    <div classNameName={styles.container}>
+    <div className={styles.container}>
       <Head>
         <title>Neurovision</title>
         <meta name="description" content="Welcome to Neurovision!" />
@@ -54,8 +58,8 @@ export default function Home() {
             </h4>
             <h1 className="text-4xl w-3/4 font-medium ">
               {" "}
-              Neural Network Learning{" "}
-              <span className="font-semibold"> Enhanced </span>
+              The <span className="font-semibold"> neural network </span>{" "}
+              handbook!
             </h1>
             <p className="w-4/5 my-4 font-light">
               Regardless of your knowledge level, neurovision provides a robust
@@ -133,10 +137,65 @@ export default function Home() {
             />
           </article>
         </section>
-        <section id="team"></section>
+        <section id="team " className="my-10 px-10">
+          <h1 className="text-center font-semibold text-4xl">Meet the Team</h1>
+          <div className="grid grid-cols-4 my-5">
+            <article className="mx-5">
+              <Image
+                className="rounded-lg"
+                src={Jason}
+                height="360"
+                width="310"
+              />
+              Jason Gayle
+            </article>
+            <article className="mx-5">
+              <Image
+                className="rounded-lg"
+                src={Jantae}
+                height="360"
+                width="310"
+              />
+              Jantae Leckie
+            </article>
+            <article className="mx-5">
+              <Image
+                className="rounded-lg"
+                src={Matthew}
+                height="360"
+                width="310"
+              />
+              Matthew Palmer
+            </article>
+            <article className="mx-5">
+              <Image
+                className="rounded-lg"
+                src={Ashley}
+                height="360"
+                width="310"
+              />
+              Ashley Perkins
+            </article>
+          </div>
+        </section>
       </main>
 
-      <footer></footer>
+      <footer className="p-4 bg-primary_dark shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          © 2022{" "}
+          <a href="https://neurovision.vercel.app/" className="hover:underline">
+            Neurovision Visualization Tool
+          </a>
+          . All Rights Reserved.
+        </span>
+        <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+            <a href="#" className="mr-4 hover:underline md:mr-6 ">
+              About
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }
