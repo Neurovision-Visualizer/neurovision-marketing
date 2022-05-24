@@ -67,7 +67,15 @@ export default function Home() {
             <CallToAction variantType={"primary"}></CallToAction>
           </article>
           <article className="rounded-md shadow-md my-auto">
-            <Image alt="about" src={AboutImg} width="650px" height="400px" />
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/DMDECliYMWM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </article>
         </section>
         <section
