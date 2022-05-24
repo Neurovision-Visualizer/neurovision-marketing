@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import NavBar from "../components/NavBar/NavBar";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 import CallToAction from "../components/CallToAction/CallToAction";
 
 import AboutImg from "../assets/about-neurovision.jpg";
@@ -83,7 +84,7 @@ export default function Home() {
           </article>
         </section>
         <section
-          id="process"
+          id="how-it-works"
           className="mt-10 px-10 py-20 grid grid-cols-2 justify-items-center gap-20 process_bg h-screen"
         >
           <article className="shadow-md rounded-md my-auto">
@@ -112,7 +113,7 @@ export default function Home() {
             <CallToAction variantType={"light"}></CallToAction>
           </article>
         </section>
-        <section id="features" className="px-10 grid grid-cols-2 ">
+        <section id="process" className="px-10 grid grid-cols-2 ">
           <article className="my-auto">
             {" "}
             <h4 className="text-primary font-semibold uppercase">
@@ -190,9 +191,9 @@ export default function Home() {
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
           <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6 ">
+            <Link href="#" className="mr-4 hover:underline md:mr-6 ">
               About
-            </a>
+            </Link>
           </li>
         </ul>
       </footer>

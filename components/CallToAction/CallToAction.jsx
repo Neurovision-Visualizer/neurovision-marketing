@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function CallToAction({ variantType, hoverStyle }) {
   const styles = {
     primary: {
@@ -16,8 +18,7 @@ function CallToAction({ variantType, hoverStyle }) {
     <button
       className={`rounded-full text-sm px-7 py-3 hover:${hoverStyle} ${styles[variantType].bg}  ${styles[variantType].text}`}
     >
-      {" "}
-      Get Started{" "}
+      <Link href="https://neurovision.vercel.app/">Get Started </Link>
     </button>
   );
 }

@@ -1,9 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
+
+import Logo from "../../assets/logo.png";
 function NavBar() {
   return (
     <nav className=" px-2 py-7 sm:px-4  rounded w-full">
       <div className="container flex justify-between items-center ">
-        <div>Logo</div>
+        <Link href="/">
+          <Image src={Logo} height="40" width="120"></Image>
+        </Link>
         <button
           data-collapse-toggle="mobile-menu"
           type="button"
@@ -51,7 +56,7 @@ function NavBar() {
             <li>
               {" "}
               <Link
-                href="/"
+                href="https://neurovision.vercel.app/"
                 className="hover:text-primary transition-colors duration-300 "
               >
                 Visualizer
@@ -60,7 +65,7 @@ function NavBar() {
             <li>
               {" "}
               <Link
-                href="/"
+                href="#process"
                 className="hover:text-primary transition-colors duration-300 "
               >
                 Our Process

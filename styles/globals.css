@@ -23,6 +23,9 @@ a {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .process_bg{
   background: radial-gradient(64.1% 256.39% at 27.26% 54.38%, #272C80 0%, #020426 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
