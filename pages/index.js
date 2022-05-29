@@ -8,7 +8,7 @@ import CallToAction from "../components/CallToAction/CallToAction";
 import AboutImg from "../assets/about-neurovision.jpg";
 import DesignNetwork from "../assets/design-network.jpg";
 import StructuredPath from "../assets/structured-path.jpg";
-import Matthew from "../assets/matthew.jpg";
+import Matthew from "../assets/matthew.jpeg";
 import Ashley from "../assets/ashley.jpg";
 import Jantae from "../assets/jantae.jpg";
 import Jason from "../assets/jason.jpg";
